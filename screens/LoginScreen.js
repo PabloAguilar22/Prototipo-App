@@ -10,7 +10,7 @@ const LoginScreen = () => {
       <View style={styles.container}>
         <Image style={styles.image} source={require('../img/Logo1.png')}/>
         <Text style={styles.titulo}>Iniciar Sesión</Text>
-        <TextInput style={styles.input} placeholder='ejemplo@gmail.com'></TextInput>
+        <TextInput style={styles.input} placeholder='ejemplo@ejemplo.com'></TextInput>
         <TextInput style={styles.input} placeholder='Contraseña' secureTextEntry={true}></TextInput>
         <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate("Forgot")}>
           <Text style={styles.texto1}>¿Olvidaste Tu Contraseña?</Text>
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
         color: '#EEEEEE',
         borderWidth: 1,
         borderColor: '#292C31',
+        placeholder: '#FFFFFF',
         borderRadius: 30,
         padding: 10,
         paddingStart: 30,
